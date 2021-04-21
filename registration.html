@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> -->
 
     <!-- Box icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
     <!-- Custom StyleSheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/./registration.css" />
+    <link rel="stylesheet" href="./css/./styles.css" />
     <title>Lorem ipsum</title>
 </head>
 
@@ -47,7 +48,7 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="account.html" class="nav-link">Account</a>
+                        <a href="./registration.html" class="nav-link">Register/Login</a>
                     </li>
                     <li class="nav-item">
                         <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
@@ -66,6 +67,84 @@
     </nav>
 
     <!-- Registration form -->
+    <div class="reg-body">
+        <div class="reg-container">
+        <div class="reg-title">Registration</div>
+
+        <form action="KutuDBTest" method="post" id="reg-form">
+            <div class="reg-user-details">
+            
+                <div class="input-box" >
+                    <span class="reg-details">Name</span>
+                    <input class="reg-input" type="text" placeholder="Enter your name" id="name" required>
+                </div>
+
+                <div class="input-box" >
+                    <span class="reg-details">Last Name</span>
+                    <input class="reg-input" type="text" placeholder="Enter your name" id="lastname" required>
+                </div>
+
+                <div class="input-box" >
+                    <span class="reg-details">Age</span>
+                    <input class="reg-input" type="number" placeholder="Enter your name"  id="age" required>
+                </div>
+
+                <div class="input-box"> 
+                    <span class="reg-details">Email Address</span>
+                    <input class="reg-input" type="text" placeholder="Enter your name"  id="email" required>
+                </div>
+
+                <div class="input-box" >
+                    <span class="reg-details">Username</span>
+                    <input class="reg-input" type="text" placeholder="Enter your name"  id="username" required>
+                </div>
+
+                <div class="input-box" >
+                    <span class="reg-details">Mobile Number</span>
+                    <input class="reg-input" type="text" placeholder="Enter your name"  id="mobilenumber" required>
+                </div>
+
+                <div class="input-box" >
+                    <span class="reg-details">Password</span>
+                    <input class="reg-input" type="password" placeholder="Enter your name"  id="password" required>
+                </div>
+
+                <div class="input-box" >
+                    <span class="reg-details">Confirm Password</span>
+                    <input class="reg-input" type="password" placeholder="Enter your name"  id="confirmpassword" required>
+                </div>
+
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+
+                <span class="gender-title">Gender</span>
+
+                <div class="category">
+                    <label for="dot-1" id="male">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+
+                    <label for="dot-2" id="female">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+
+                    <label for="dot-3" id="name">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="reg-button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    </div>
 
     <!-- Footer -->
     <footer id="footer" class="section footer">
@@ -132,6 +211,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- Custom Script -->
     <script src="./js/index.js"></script>
+    <!-- Custom Script -->
+  <script src="./js/registration.js"></script>
 </body>
 
 </html>
