@@ -15,6 +15,9 @@ section{
     background-color: white;
     
   }
+  .nav{
+    background-color: rgb(255, 202, 148);
+  }
   /*-------------------Login/Register form-------------- */
   .form-group-L input {
     width: 100%;
