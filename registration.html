@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> -->
 
     <!-- Box icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
     <!-- Custom StyleSheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/./registration.css" />
+    <link rel="stylesheet" href="./css/./styles.css" />
     <title>Lorem ipsum</title>
 </head>
 
@@ -20,7 +21,7 @@
     <nav class="nav">
         <div class="navigation container">
             <div class="logo">
-                <h1>Kutu</h1>
+                <a href="index.html"><h1>Kutu</h1></a>
             </div>
 
             <div class="menu">
@@ -47,7 +48,7 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="account.html" class="nav-link">Account</a>
+                        <a href="registration.html" class="nav-link">Register/Login</a>
                     </li>
                     <li class="nav-item">
                         <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
@@ -64,8 +65,222 @@
             </div>
         </div>
     </nav>
-
+<!-- /////////////////////////////////////////////////// -->
     <!-- Registration form -->
+    
+    <section>
+        <div class="container-reg">
+          <form>
+              <!---------- Login info ---------->
+            
+            <div class="step step-login active">
+                <div class="reg">Login/Register</div>
+
+                <div class="form-group-L">
+                    <label class="label-L" for="usernameLog">User Name</label>
+                    <input type="text" id="usernameLog" name="usernameLog" required>
+                </div>
+
+                <div class="form-group-L">
+                    <label class="label-L" for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+
+                <button type="button-L" class="login-L">Login</button>
+                <button type="button-L" class="register-L">Register</button>
+            </div>
+
+                <!---------- Category info ---------->
+            
+            <div class="step step-category ">
+                    <div class="cat">Please specify the member category</div>
+    
+                    
+                    <div class="form-group-C">
+                        <input type="checkbox" id="Client" name="Client">
+                        <label class="Client" for="Client">KUTU Client/Customer</label>
+                        
+                      </div>
+    
+                      <div class="form-group-C">
+                        <input type="checkbox" id="Sales-Rep" name="Sales-Rep">
+                        <label class="Sales-rep" for="Sales-rep">KUTU Sales-Rep</label>
+                        
+                      </div>
+    
+    
+                      <button type="button" class="previous-btn">Prev</button>
+                      <button type="button" class="next-btn">Next</button>
+                </div>
+
+            
+                        <!----------------  Form Personal--------------->
+            <div class="step step-1 ">
+                <div class="reg">Registration</div>
+              <div class="form-group">
+                <label class="label" for="firstName">First Name</label>
+                <input type="text" id="name" name="first-name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="last-name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="birthday">Date Of Birth</label>
+                <input type="date" id="birthday" name="birthday" required>
+              </div>
+              
+              <div class="form-group">
+                <label class="label" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="cell">Cell Number</label>
+                <input type="number" id="cell" name="cell" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="Password">Password</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="confirmPass">Confirm Password</label>
+                <input type="password" id="confirmPass" name="confirmPass" required>
+              </div>
+              <button type="button" class="previous-btn">Prev</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+
+                            <!---------- Form Address---------->
+ 
+            <div class="step step-2 ">
+                <div class="reg">Registration</div>
+                <div class="form2title">Address</div>
+
+                <div class="form-group2">
+                    <label class="label" for="houseNum">House number</label>
+                    <input type="text" id="houseNum" name="houseNum" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="stName">Street name</label>
+                    <input type="text" id="stName" name="stName" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="postCode">Postal code</label>
+                    <input type="number" id="postCode" name="postCode" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="complexName">Complex name</label>
+                    <input type="text" id="complexName" name="complexName" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="unitNum">Unit number</label>
+                    <input type="text" id="unitNum" name="unitNum" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="suburb">Suburb</label>
+                    <input type="text" id="suburb" name="suburb" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group2">
+                    <label class="label" for="province">Province</label>
+                    <input type="text" id="province" name="province" required>
+                </div>
+
+                <button type="button" class="previous-btn">Prev</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+ 
+                            <!---------------- Form Sponsorship -------------->
+                            
+            
+            <div class="step step-3 ">
+                <div class="reg">Registration</div>
+              <label class="label3" for="knowHow">How were you introduced to Kutu</label>
+              <div class="form-group3">
+                <select class="knowHow" name="knowHow" id="knowHow">
+                    <option value="knowHow">Social Media</option>
+                    <option value="knowHow">Friend/Family</option>
+                    <option value="knowHow">Meeting</option>
+                    <option value="knowHow">Advertisement</option>
+                    <option value="knowHow">Kutu Sales Representative</option>
+                </select>
+              </div>
+              <div class="ifSalesRep">If you have Chosen KUTU Sales Rep <br>
+            Please specify their name and rep number </div>
+                <div class="form-group3">
+                <label for="rep-name">Rep-Name</label>
+                <input type="text" id="rep-name" name="rep-name" >
+              </div>
+
+              <div class="form-group3">
+                <label  for="rep-number">Rep-Number</label>
+                <input  type="number" id="rep-number" name="rep-number">
+              </div>
+              <button type="button" class="previous-btn">Prev</button>
+              <button type="button" class="next-btn">Next</button>
+            </div>
+                           
+                            <!---------------- forth Form -------------------->
+            
+            <div class="step step-4 ">
+                <div class="reg">Registration</div>
+                <div class="bankLable">Banking Details (to pay your commission)</div>  
+              
+                <div class="form-group4">
+                <label for="bank">Bank</label>
+                <input type="text" id="bank" name="bank" required>
+              </div>
+
+              <div class="form-group4">
+                <label for="accountNum">Account Number</label>
+                <input type="number" id="accountNum" name="accountNum" required>
+              </div>
+
+              <div class="form-group4">
+                <label for="accountType">Account Type</label>
+                <input type="text" id="accountType" name="accountType" required>
+              </div>
+
+              <div class="form-group4">
+                <label for="branchCode">Branch Code</label>
+                <input type="number" id="branchCode" name="branchCode" required>
+              </div>
+
+              <button type="button" class="previous-btn">Prev</button>
+              <button type="button" class="next-btn">Next</button>
+            </div>
+
+          </form>
+        </div>
+    </section>
+    
+      </body>
 
     <!-- Footer -->
     <footer id="footer" class="section footer">
@@ -128,10 +343,13 @@
     </footer>
     <!-- End Footer -->
 
+      <!-- Custom Script -->
+  <script src="./js/registration.js"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- Custom Script -->
     <script src="./js/index.js"></script>
+  
 </body>
 
 </html>

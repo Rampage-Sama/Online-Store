@@ -1,0 +1,309 @@
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgb(252, 203, 146),rgb(255, 115, 91));
+  }
+  .container-reg{
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000020;
+    border-radius: 8px;
+    background-color: white;
+    
+  }
+  /*-------------------Login/Register form-------------- */
+  .form-group-L input {
+    width: 100%;
+    border: 1.5px solid rgba(128, 128, 128, 0.418);
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  button.login-L{
+    /* float: right; */
+    position: relative;
+    left: 220px;
+    margin-top: 25px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgb(180, 220, 255);
+    font-family: "Montserrat";
+    font-size: 18px;
+    cursor: pointer;
+  } 
+  button.register-L{
+      position: relative;
+      top: 45px;
+      left: 115px;
+      margin-bottom: 50px;
+      border: none;
+      border-radius: 8px;
+      padding: 5px 15px;
+      cursor: pointer;
+      background-color: rgb(206, 206, 206);
+  }
+
+  /*-------------------Form Category------------- */
+  .cat{
+      font-size: 30px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 25px;
+  }
+ 
+
+  .form-group-C{
+    padding-top: 20px;
+   text-align: center;
+   vertical-align: middle;
+   
+   /* display: inline-block; */
+   
+  }
+ 
+  .Client{
+    margin-top: 50px;
+  }
+  .Sales-rep{
+    
+    margin-top: 30px;
+  }
+  .step-category .previous-btn{
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+  }
+  .step-category .next-btn{
+    position: relative;
+    right: 80px;
+    bottom: 50px;
+  }
+  
+ 
+
+/*-------------------Form 1 Personal info------------- */
+  .reg{
+    font-size: 35px;
+     text-align: center;
+     padding-bottom: 50px;
+     width: 100%;
+       
+  }
+   .step {
+    display: none;
+  }
+  
+  .step.active {
+    display: block;
+  }
+  .form-group {
+    width: 50%;
+    margin-top: 20px;
+    float: right;
+    justify-content: center;
+  }
+
+  
+.label{
+    display: inline-block;
+    width: 100%;
+}
+
+ .step-1 .previous-btn,
+ .step-1 .next-btn{
+   margin-top: 130px;
+    position: relative;
+    left: 120px;
+ }
+  
+  .form-group input {
+    width: 90%;
+    border: 1.5px solid rgba(128, 128, 128, 0.418);
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 4px;
+    
+  }
+
+ 
+  button.next-btn,
+  button.previous-btn,
+  button.submit-btn {
+    float: right;
+    margin-top: 90px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgb(180, 220, 255);
+    font-family: "Montserrat";
+    font-size: 18px;
+    cursor: pointer;
+  } 
+  
+    
+  button.previous-btn {
+    float: left;
+  }
+  
+  button.submit-btn {
+    background-color: aquamarine;
+  }
+   /* text-align: right; */
+
+
+
+   /* -----form Address---- */
+   .form-group2 {
+    width: 50%;
+    margin-top: 20px;
+    float: right;
+    /* text-align: center; */
+    
+  }
+  .form2title{
+      /* text-align: center; */
+      margin-bottom: 30px;
+      font-size: 20px;
+  }
+
+  
+.label{
+    display: inline-block;
+    width: 100%;
+}
+ 
+  
+  .form-group2 input {
+    width: 90%;
+    border: 1.5px solid rgba(128, 128, 128, 0.418);
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 4px;
+    
+  }
+  .step-2 .previous-btn{
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+  }
+  .step-2 .next-btn{
+    position: relative;
+    right: 105px;
+    bottom: 50px;
+  }
+
+
+
+
+/* -----form 3---- */
+.label3{
+     
+    width: 100px;
+}
+   .form-group3 {
+    width: 100%;
+    float: right;
+    margin-top: 5px;
+    float: right;
+   
+  }
+  .ifSalesRep{
+    margin-bottom: 10px;
+  }
+  /* .label2,
+  .ifSalesRep{
+    text-align: center;
+  } */
+  .form-group3 label{
+      display: inline-block;
+      width: 100%;
+  }
+  .knowHow{
+    width: 100%;
+    border: 1.5px solid rgba(128, 128, 128, 0.418);
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+   
+  .form-group3 input {
+    width: 100%;
+    border: 1.5px solid rgba(128, 128, 128, 0.418);
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 4px;
+    
+  }
+  .step-3 .previous-btn{
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+  }
+  .step-3 .next-btn{
+    position: relative;
+    right: 105px;
+    bottom: 50px;
+  }
+
+  /* ---------Banking-------------- */
+.label4{
+     
+    width: 100px;
+}
+   .form-group3 {
+    width: 100%;
+    float: right;
+    margin-top: 5px;
+    float: right;
+   
+  }
+ 
+  .form-group4 label{
+      display: inline-block;
+      width: 100%;
+      /* padding: 4px 0px 0px 5px; */
+      margin: 4px 0px 0px 5px;
+
+  }
+ 
+  .form-group4 input {
+    width: 100%;
+    border: 1.5px solid rgba(128, 128, 128, 0.418);
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    
+  }
+  .bankLable{
+      text-align: center;
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  .step-4 .previous-btn{
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+  }
+  .step-4 .next-btn{
+    position: relative;
+    right: 105px;
+    bottom: 50px;
+  }
+
+
