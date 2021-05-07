@@ -155,12 +155,20 @@ section{
   
     
   button.previous-btn {
+    position: relative;
+    top: -50px;
     float: left;
+    margin-top: 80px;
+    
   }
   
   button.submit-btn {
     background-color: aquamarine;
+    margin-top: 80px;
+    position: relative;
+    right: 120px;
   }
+  
    /* text-align: right; */
 
 

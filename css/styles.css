@@ -78,7 +78,7 @@ li {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image:linear-gradient( rgb(255, 227, 199),rgb(250, 104, 78));
+  background-image:linear-gradient( rgb(255, 187, 110),rgb(255, 68, 35));
   overflow: hidden;
   
 }
@@ -86,6 +86,7 @@ li {
   width: 80px;
   position: relative;
   top: 1px;
+  /* margin-right: 300px; */
 }
 
 .nav {
@@ -98,7 +99,7 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(255, 227, 199);
+  background-color: rgb(255, 191, 128);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 999;
 }
@@ -151,7 +152,7 @@ li {
   display: none;
 }
 
-@media only screen and (max-width: 929px) {
+@media only screen and (max-width: 995px) {
   .menu {
     position: fixed;
     top: 0;
