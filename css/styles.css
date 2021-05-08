@@ -152,7 +152,7 @@ li {
   display: none;
 }
 
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 1010px) {
   .menu {
     position: fixed;
     top: 0;
@@ -240,9 +240,9 @@ li {
 /* About Us */
 
 .about-section {
-  background: url() no-repeat left;
+  background: url(/images/hero2.jpg) no-repeat left;
   background-size: 55%;
-  background-color: #fdfdfd;
+  background-color: linear-gradient( rgb(255, 187, 110),rgb(255, 68, 35));;
   overflow: hidden;
   padding: 100px 0;
 }
