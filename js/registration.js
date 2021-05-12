@@ -8,6 +8,11 @@ const prevBtn = document.querySelectorAll("form .previous-btn");
 const regBtn = document.querySelectorAll("form .register-L");
 const form = document.getElementById("form");
 
+//------button for show more with event listener----//
+let btnShow = document.querySelector("form .btnShow");
+
+
+
 // this code is for the checkbox choice//
 function check(el){
   var choice = document.getElementsByName("choose");
@@ -70,9 +75,14 @@ form.addEventListener('submit', function(event){
     event.preventDefault();//prevents form from auto submitting
 
     //login/register step 
-    // step 1:Personal details 
+    //-------------------Category section------------------//
+    // var Client = document.getElementById("Client").value.trim();
+    // console.log(Client);
+    // var Salesrep = document.getElementById("Sales-rep").value.trim();
+    // console.log(Salesrep);
 
-    
+
+    //----------- step 1:Personal Information ----------------//
     var userName = document.getElementById("name").value.trim();
     console.log(userName);
     var Lastname = document.getElementById("lastname").value.trim();
@@ -92,8 +102,44 @@ form.addEventListener('submit', function(event){
     // var Confirmpass = document.getElementById("confirmPass").value.trim();
     // console.log(Confirmpass);
 
-// form 2: Banking and Identification 
-     
+
+    //-------------------section 2 Address----------------//
+    var houseNum = document.getElementById("houseNum").value.trim();
+    console.log(houseNum);
+    var stName = document.getElementById("stName").value.trim();
+    console.log(stName);
+    var postCode = document.getElementById("postCode").value.trim();
+    console.log(postCode);
+    var complexName = document.getElementById("complexName").value.trim();
+    console.log(complexName);
+    var unitNum = document.getElementById("unitNum").value.trim();
+    console.log(unitNum);
+    var suburb = document.getElementById("suburb").value.trim();
+    console.log(suburb);
+    var city = document.getElementById("city").value.trim();
+    console.log(city);
+    var province = document.getElementById("province").value.trim();
+    console.log(province);
+
+    //---------------- Section 3: Knowhow of Kutu ------------------//  
+    var knowHow = document.getElementById("knowHow").value.trim();
+    console.log(knowHow);
+    var repName = document.getElementById("rep-name").value.trim();
+    console.log(repName);
+    var repNumber = document.getElementById("rep-number").value.trim();
+    console.log(repNumber);
+   
+    //---------------- Section 4: Banking ------------------//
+    var bank = document.getElementById("bank").value.trim();
+    console.log(bank);
+    var accountNum = document.getElementById("accountNum").value.trim();
+    console.log(accountNum);
+    var accountType = document.getElementById("accountType").value.trim();
+    console.log(accountType);
+    var branchCode = document.getElementById("branchCode").value.trim();
+    console.log(branchCode);
+
+
 // sending data inside an object
 //  fetch
 // fetch('localhost:8080/Kutu/registerUser', {
