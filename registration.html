@@ -80,7 +80,7 @@
           <form  id="form" novalidate> 
               <!---------- Login info ---------->
             
-      <div class="step step-login ">
+      <div class="step step-login active">
           <div class="reg">Login/Register</div>
 
           <div class="form-group-L">
@@ -139,7 +139,7 @@
             <h3>If You Have Chosen Sales-rep Registration:</h3>
             <ul>
               <li>Please do not fill the registration document in the next slide.</li>
-              <li>Please fill out from section 2 till the end.</li>
+              <li>Please fill out from section 1 till the end.</li>
             </ul>
   
           <button type="button" class="previous-btn">Prev</button>
@@ -337,17 +337,23 @@
 
             <!---------------- section 5:Terms  -------------------->
 
-            <div class="step step-5 active">
+            <div class="step step-5 ">
               <div class="reg">Sales-rep Registration</div>
               <h3>Section 4: T's & C's and Document upload</h3> 
 
-              <h4>Please upload your certified ID document below:</h4>
+              <h4>Please upload your certified ID document.</h4>
 
-               <div class="file-upload">
-               <input type="file" id="real-file" hidden="hidden">
-               <button type="button" id="custom-button">CHOOSE A FILE</button> 
-               <span id="custom-text">No file(s) selected No file(s) selected No file(s) selected No file(s) selected No file(s) selected </span>
+              <div class="file-upload">
+                <!-- adding multiple files -->
+                <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+                <button class="file-upload__button" type="button">Choose File(s)</button>
+                <span class="file-upload__label"></span>
               </div>
+
+              <!-- terms and conditions -->
+              <div class="terms">
+               <td><input type="checkbox" id="TsCs" name="choose"> I Accept Terms And Conditions </td> 
+              </div> 
 
             <button type="button" class="previous-btn">Prev</button>
             <button type="submit" class="submit-btn">Submit</button>

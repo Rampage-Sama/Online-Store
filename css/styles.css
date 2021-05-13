@@ -529,10 +529,12 @@ li {
 }
 
 .footer-container {
+  position: relative;
+  left: 220px;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   color: var(--white);
-  
+  justify-content: center;
 }
 .footer-center{
   text-align: center;

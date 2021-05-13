@@ -1,18 +1,31 @@
-const realFileBtn = document.getElementById("real-file");
-const customBtn = document.getElementById("custom-button");
-const customTxt = document.getElementById("custom-text");
 
-// everything that happens when button is clicked
-customBtn.addEventListener("click", function(){
-    realFileBtn.click();
-});
-
-// displaying file name in custom text span
-realFileBtn.addEventListener("change", function(){
-    if(realFileBtn.value){
-        customTxt.innerHTML = realFileBtn.value.match( /[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
-
-    }else{
-        customTxt.innerHTML = "No file chosen, yet.";
+// for internet explorer support
+Array.prototype.forEach.call(document.querySelectorAll(".file-upload__button"),
+    function(button) {
+      const hiddenInput = button.parentElement.querySelector(
+        ".file-upload__input"
+      );
+      const label = button.parentElement.querySelector(".file-upload__label");
+      const defaultLabelText = "No file(s) selected";
+  
+      // Set default text for label
+      label.textContent = defaultLabelText;
+      label.title = defaultLabelText;
+  
+      button.addEventListener("click", function() {
+        hiddenInput.click();
+      });
+  
+      hiddenInput.addEventListener("change", function() {
+        const filenameList = Array.prototype.map.call(hiddenInput.files, function(
+          file
+        ) {
+          return file.name;
+        });
+  
+        label.textContent = filenameList.join(", ") || defaultLabelText;
+        label.title = label.textContent;
+      });
     }
-})
+  );
+  
