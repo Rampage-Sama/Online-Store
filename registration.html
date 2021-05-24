@@ -80,7 +80,7 @@
           <form  id="form" novalidate> 
               <!---------- Login info ---------->
             
-      <div class="step step-login active">
+      <div class="step step-login ">
           <div class="reg">Login/Register</div>
 
           <div class="form-group-L">
@@ -100,17 +100,17 @@
 
                 <!---------- Category info ---------->
             
-      <div class="step step-category ">
+      <div class="step step-category active">
           <div class="cat">Please specify the member registration category</div>
 
           
           <div class="form-group-C">
-              <input type="checkbox" onchange=check(this) id="Client" name="choose">
+              <input type="radio" onchange=check(this) id="Client" name="choose">
               <label class="Client" for="Client" >KUTU Client/Customer</label>
             </div>
 
             <div class="form-group-C">
-              <input type="checkbox" onchange=check(this) id="Sales-Rep" name="choose">
+              <input type="radio" onchange=check(this) id="Sales-Rep" name="choose">
               <label class="Sales-rep" for="Sales-rep"  >KUTU Sales-Rep</label>
             </div>
 
@@ -139,7 +139,7 @@
             <h3>If You Have Chosen Sales-rep Registration:</h3>
             <ul>
               <li>Please do not fill the registration document in the next slide.</li>
-              <li>Please fill out from section 1 till the end.</li>
+              <li class="li2">Please fill out from section 1 till the end.</li>
             </ul>
   
           <button type="button" class="previous-btn">Prev</button>
@@ -172,7 +172,7 @@
                 <h3>Section 1: Personal information</h3>
               <div class="form-group">
                 <label class="label" for="lastName">Last Name</label>
-                <input type="text" id="lastname" name="lastname" >
+                <input type="text" id="lastname" name="lastname">
               </div>
 
               <div class="form-group">
@@ -197,7 +197,7 @@
 
               <div class="form-group">
                 <label class="label" for="cell">Cell Number</label>
-                <input type="number" maxlength="10" pattern="[0-9]{1}[1-9]{0}" id="cell" name="cell" placeholder="Enter Your Phone Number" required>
+                <input type="number" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="cell" name="cell" placeholder="Enter Your Phone Number" required>
               </div>
 
               <div class="form-group">
@@ -243,7 +243,7 @@
 
                 <div class="form-group2">
                     <label class="label" for="complexName">Complex name</label>
-                    <input type="text" id="complexName" name="complexName" required>
+                    <input type="text" id="complexName" name="complexName" >
                 </div>
 
                 <div class="form-group2">
@@ -253,7 +253,7 @@
 
                 <div class="form-group2">
                   <label class="label" for="unitNum">Unit number</label>
-                  <input type="text" id="unitNum" name="unitNum" required>
+                  <input type="text" id="unitNum" name="unitNum" >
               </div>
 
                 <div class="form-group2">
@@ -281,7 +281,7 @@
 
               <label class="label3" for="knowHow">How were you introduced to Kutu</label>
               <div class="form-group3">
-                <select class="knowHow" name="knowHow" id="knowHow">
+                <select class="knowHow" name="knowHow" id="knowHow" required>
                     <option value="knowHow">Social Media</option>
                     <option value="knowHow">Friend/Family</option>
                     <option value="knowHow">Meeting</option>
@@ -341,18 +341,19 @@
               <div class="reg">Sales-rep Registration</div>
               <h3>Section 4: T's & C's and Document upload</h3> 
 
-              <h4>Please upload your certified ID document.</h4>
+              <h4>Please upload your certified ID document .</h4>
+              <h4 class="months">(Not older than 3 months)</h4>
 
               <div class="file-upload">
                 <!-- adding multiple files -->
-                <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+                <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple required>
                 <button class="file-upload__button" type="button">Choose File(s)</button>
                 <span class="file-upload__label"></span>
               </div>
 
               <!-- terms and conditions -->
               <div class="terms">
-               <td><input type="checkbox" id="TsCs" name="choose"> I Accept Terms And Conditions </td> 
+               <td><input type="checkbox" id="TsCs" name="choose" required> I Accept Terms And Conditions <a href=" " download>(DOWNLOAD)</a></td> 
               </div> 
 
             <button type="button" class="previous-btn">Prev</button>

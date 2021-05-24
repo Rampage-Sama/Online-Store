@@ -1,11 +1,12 @@
 /* About Us */
 
 .about-section {
-    background: url(/images/hero2.jpg) no-repeat left;
-    background-size: 55%;
+    
+    /* background-size: 55%;
     background-color: linear-gradient( rgb(255, 187, 110),rgb(255, 68, 35));;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 100px 0; */
+    
   }
   
   .inner-container {

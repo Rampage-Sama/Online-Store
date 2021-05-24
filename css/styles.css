@@ -315,34 +315,34 @@ li {
 }
 @keyframes slide{
   0%{
-    background-image: url('/images/night-view-6061251_1920.jpg');
+    background-image: url('/images/art-1238602_1920.jpg');
   }
   20%{
-    background-image: url('/images/margarite-5366009_1920.jpg');
+    background-image: url('/images/desk-593317_1920.jpg');
   }
   20.01%{
-    background-image: url('/images/sunset-5903426_1920.jpg');
+    background-image: url('/images/composition-3288396_1920.jpg');
   }
   40%{
-    background-image: url('/images/pink-324175_1920.jpg');
+    background-image: url('/images/school-work-851328_1920.jpg');
   }
   40.01%{
-    background-image: url('/images/rose-729509_1920.jpg');
+    background-image: url('/images/school-supplies-top-view-chalkboard.jpg');
   }
   60%{
-    background-image: url('/images/sparks-265850_1920.jpg');
+    background-image: url('/images/school-bag-with-books-equipment.jpg');
   }
   60.01%{
-    background-image: url('/images/sunset-5903426_1920.jpg');
+    background-image: url('/images/back-school-concept.jpg');
   }
   80%{
-    background-image: url('/images/night-view-6061251_1920.jpg');
+    background-image: url('/images/laptop-1016257_1920.jpg');
   }
   80.01%{
-    background-image: url('/images/tree-276014_1920.jpg');
+    background-image: url('/images/school-work-851328_1920.jpg');
   }
   100%{
-    background-image: url('/images/flower-field-250016_1920.jpg');
+    background-image: url('/images/desk-593317_1920.jpg');
   }
   
 }
@@ -390,8 +390,9 @@ li {
 
 
 .product {
-  height: 48rem;
-  background-color: #fff;
+  width: 260px;
+  height: 38rem;
+  background-color: rgb(255, 233, 208);
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
   text-align: center;
@@ -400,19 +401,22 @@ li {
 
 .product:hover {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+ 
 }
 
 .product-header {
+  border-radius: 1rem;
   position: relative;
-  height: 35rem;
-  background-color: #f6f2f1;
+  height: 20rem;
+  background-color: #ffffff;
   transition: all 300ms ease-in-out;
   z-index: 0;
 }
 
 .product-header img {
-  height: 100%;
+  height: 80%;
   border-radius: 10px;
+  margin: 20px 0px 0px 0px;
 }
 
 .product-footer {
@@ -529,8 +533,8 @@ li {
 }
 
 .footer-container {
-  position: relative;
-  left: 220px;
+  /* position: relative; */
+  /* left: 220px; */
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   color: var(--white);
@@ -578,74 +582,7 @@ li {
   }
 }
 
-/*----------------------------- All Products page -----------------------------*/
-.product-center2,
-.product-center3,
-.product-center4,
-.product-center5{
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 7rem 3rem;
-}
 
-
-
-#showMore{
-  padding: 15px;
-  margin: 30px 0;
-  background-color: #000;
-  border: 1px solid #fff;
-  color: #ffff;
-  transition: all 0.5s ease;
-}
-#showMore:hover{
-  transition: all 0.5s ease;
-  border:1px solid rgb(61,180,248);
-  box-shadow: 0 0 15px 5px rgba(40,170,200,1);
-}
-
-.col-md-12{
-  margin-left:700px ;
-}
-
-.section .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 9rem;
-  margin-top: 5rem;
-}
-
-.all-products .top select {
-  
-  font-family: "Poppins", sans-serif;
-  width: 20rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  appearance: none;
-  outline: none;
-}
-
-form {
-  position: relative;
-  z-index: 1;
-}
-
-form span {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  z-index: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .all-products .top select {
-    width: 15rem;
-  }
-}
 
 /*--------------------------- Pagination ----------------------*/
 .pagination {
@@ -901,216 +838,3 @@ th:last-child {
   }
 }
 
-/*------------------------ Contact Us -------------------------*/
-
-.contact {
-position: relative;
-min-height: 100vh;
-padding: 50px 100px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background: url();
-background-size: cover;
-}
-
-.contact .content {
-  max-width: 800px;
-  text-align: center;
-}
-
-.contact .content h2 {
-  font-size: 36px;
-  font-weight: 500;
-  color: #243a6f;
-}
-
-.contact .content p {
-  font-weight: 300;
-  color: #243a6f;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  
-  /* align-items: center; */
-  /* margin-top: 30px; */
-}
-
-.container .contactInfo {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.container .contactInfo .box {
-  position: relative;
-  padding: 20px 0;
-  display: flex;
-}
-
-.container .contactInfo .box .icon {
-  min-width: 60px;
-  height: 60px;
-  background: #fff;
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  border-radius: 50%;
-  font-size: 22px;
-}
-
-.container .contactInfo .box .icon .text{
-  display: flex;
-  margin-left: 20px;
-  font-size: 16px;
-  color: #fff;
-  flex-direction: column;
-  font-weight: 300;
-}
-
-.container .contactInfo .box .icon .box .text h3{
-  font-weight: 500;
-  color: #00bc;
-}
-
-.contactForm {
-  width: 40%;
-  padding: 40px;
-  background: #fff;
-}
-
-.contactForm h2 {
-  font-size: 30px;
-  color: #333;
-  font-weight: 500;
-}
-
-.contactForm .inputBox {
-  position: relative;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid #333;
-  outline: none;
-  resize: none;
-}
-
-.contactForm .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 5px 0;
-  pointer-events: none;
-  transition: 0.5s;
-  color: #666;
-}
-
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-  color: #e91e63;
-  font-size: 12px;
-  transform: translateY(-50px);
-}
-
-.contactForm .inputBox input[type="submit"] {
-  width: 100px;
-  background: #00bc;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-@media (max-width: 991px) {
-  .contact {
-    padding: 50px;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .container .contactInfo {
-    margin-bottom: 40px;
-  }
-  .container .contactInfo {
-    width: 100%;
-  }
-}
-
-/* Search Button */
-
-.container .input {
-  border: 0;
-  outline: none;
-  color: #8b7d77;
-}
-
-.search_wrap {
-  width: 500px;
-  margin: 30px auto;
-}
-
-.search-wrap .search-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.search-wrap .search-box .input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 10px 20px;
-  border-radius: 3px;
-  font-size: 18px;
-}
-
-.search-wrap .search-box .btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 100%;
-  background: #7690da;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.search-wrap .search-box .btn:hover {
-  background: #708bd2;
-}
-
-.search-wrap .search-box .btn.btn-common .fas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #243a6f;
-  font-size: 20px;
-}
-
-.search-wrap .search-wrap-1 .search-box .btn {
-  right: 0;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.search-wrap.search-wrap-1 .search-box .btn {
-  padding-right: 80px;
-}

@@ -76,10 +76,10 @@ form.addEventListener('submit', function(event){
 
     //login/register step 
     //-------------------Category section------------------//
-    // var Client = document.getElementById("Client").value.trim();
-    // console.log(Client);
-    // var Salesrep = document.getElementById("Sales-rep").value.trim();
-    // console.log(Salesrep);
+    var Role1 = document.getElementById("Client").value.trim();
+    console.log(Role1);
+    var Role2 = document.getElementById("Sales-Rep").value.trim();
+    console.log(Role2);
 
 
     //----------- step 1:Personal Information ----------------//
